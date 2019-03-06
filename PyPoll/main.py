@@ -1,5 +1,5 @@
 import csv
-from collections import OrderedDict
+
 from operator import itemgetter
 
 csvpath = "election_data.csv"
@@ -46,7 +46,7 @@ candidate_votes
 winner = sorted(candidate_votes.items(), key=itemgetter(1), reverse=True)
 
 print("-------------------------")
-print("Winner: " + str(winner[0]))
+print (f"Winner: {winner[0]}")
 print("-------------------------")
 
 
